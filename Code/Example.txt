@@ -1,0 +1,28 @@
+using Alice.Entities.Engine;
+
+public static class AliceTables
+{
+	public static AliceSqlTableUsers Users = new();
+}
+
+public class AliceSqlTableUsers : AliceSqlTable{
+	
+}
+
+public class AliceSqlColumn<T where T is struct> (NpgSqlConnection db)
+{
+	public List<T>? IdWholeColumn => {
+		get => {
+			if (field is not null) return field;
+			Task.Run(async () => {
+				
+			});
+		};
+		private set;
+	};
+}
+
+public class AliceSqlQuery<T where T is struct>
+{
+	
+}
