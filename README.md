@@ -1,7 +1,7 @@
-## Alice
+# Alice
 Ultra fast LINQ to SQL translation framework based on incremental generators. 
 
-# TARGET SYNTAX WE'LL WANT TO REACH IN FUTURE:
+## TARGET SYNTAX WE'LL WANT TO REACH IN FUTURE:
 ```
 [SqlTableElement]
 public record Score(uint Score); // creating table unless exists automaticly
@@ -12,4 +12,4 @@ Tables.Scores                             // select the tabs
     .Log();                   // log operations if U want
 ```
 
-## WORK IN PROGRESS!
+# WORK IN PROGRESS!
